@@ -137,7 +137,7 @@ function draw() {
   // patternDis.resize(windowWidth / 2, 0);
 
   imageMode(CENTER);
-  image(patternDis, 0, 0, 600, 360);
+  image(patternDis, 0, 0, 650, 390);
   pop();
 
   push();
@@ -154,7 +154,7 @@ function draw() {
   textSize(18);
   textAlign(CENTER);
   textFont("Noto Sans Mono");
-  text("< explore >", 0, 0);
+  text("< refresh >", 0, 0);
   pop();
 
   push();
@@ -384,7 +384,6 @@ function windowResized() {
 function mousePressed() {
   if (d < 100) {
     location.reload();
-    location.href = "https://en.wikipedia.org/wiki/Instant_noodles";
   }
 
   if (d1 < 100) {

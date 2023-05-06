@@ -137,7 +137,7 @@ function draw() {
   // patternDis.resize(windowWidth / 2, 0);
 
   imageMode(CENTER);
-  image(patternDis, 0, 0, 650, 390);
+  image(patternDis, 0, 0, 600, 360);
   pop();
 
   push();

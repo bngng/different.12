@@ -388,16 +388,16 @@ function mousePressed() {
 
   if (d1 < 100) {
     location.reload();
-    location.href = "https://en.wikipedia.org/wiki/Ramen";
+    location.href = "samesamebutdifferent-11.netlify.app";
   }
 
   if (d2 < 100) {
     location.reload();
-    location.href = "https://en.wikipedia.org/wiki/Cup_Noodles";
+    location.href = "samesamebutdifferent-01.netlify.app";
   }
 
   if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < width / 15) {
     location.reload();
-    location.href = "https://editor.p5js.org/aj.nguyen93/full/JbzRKq2FS";
+    location.href = "https://samesame.netlify.app";
   }
 }

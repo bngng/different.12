@@ -144,7 +144,7 @@ function draw() {
   // translate(width / 2, 0);
 
   imageMode(CORNER);
-  tint(255, 100);
+  tint(255, 65);
   image(logo2, -width / 150, -width / 180, width + 20, width / 16);
   pop();
 

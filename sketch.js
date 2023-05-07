@@ -85,7 +85,7 @@ function setup() {
   shape.rect(0, 0, 500, 300, 20);
 
   for (let i = 0; i < 1800; i++) {
-    myFont[i] = random(myFont2, myFont3);
+    myFont[i] = myFont2;
     colorSet[i] = random(80, 200);
     luck[i] = round(random(-1, 1));
     luck2[i] = round(random(-1, 1));
@@ -294,7 +294,7 @@ function drawPattern(dis) {
       textDis.noStroke();
       textDis.fill(pixelColorImg[i]);
       textDis.textSize(60);
-      textDis.textFont(myFont3);
+      textDis.textFont(myFont);
       textDis.textAlign(LEFT, BOTTOM);
       textDis.text(nameDis[i], space, leading);
       space += 85;

@@ -68,7 +68,7 @@ function preload() {
   txt = loadStrings("ssbd.txt");
 
   myFont = ["Noto Sans", "Noto Serif", "Noto Sans Mono"];
-  myFont2 = loadFont('NotoSansMono-ExtraBold.ttf')
+  myFont2 = loadFont('NotoSansMono-Medium.ttf')
   myFont3 = loadFont('NotoSerif-Italic.ttf')
   myFontMix = [myFont2, myFont3]
 //   NotoSansMono-ExtraBold.ttf

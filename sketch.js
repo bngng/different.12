@@ -28,6 +28,7 @@ let direction;
 let myFont = [];
 let myFont2
 let myFont3
+let myFont4
 let myFontMix = []
 
 let tilesXbg = 5;
@@ -68,9 +69,10 @@ function preload() {
   txt = loadStrings("ssbd.txt");
 
   myFont = ["Noto Sans", "Noto Serif", "Noto Sans Mono"];
-  myFont2 = loadFont('NotoSansMono-Medium.ttf')
+  myFont2 = loadFont('NotoSansMono-ExtraBold.ttf')
+  myFont4 = loadFont('NotoSansMono-Medium.ttf')
   myFont3 = loadFont('NotoSerif-Italic.ttf')
-  myFontMix = [myFont2, myFont3]
+  myFontMix = [myFont4, myFont3]
 //   NotoSansMono-ExtraBold.ttf
 }
 
@@ -355,7 +357,7 @@ function drawPattern(dis) {
       // pattern.ellipseMode(CORNER);
       pattern.rect(200 + spaceBio, leadingW, wordW / 0.7, 13);
 
-      pattern.fill(250, map(mouseY, 0, pattern.height, 100, 125));
+      pattern.fill(250, map(mouseY, 0, pattern.height, 100, 150));
       pattern.textFont(myFont[j + count]);
       pattern.textSize(15);
       pattern.text(bioDis2[j][i], bioX[i] + spaceBio + moveX, bioH[j + count]);

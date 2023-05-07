@@ -67,9 +67,9 @@ function preload() {
   txt = loadStrings("ssbd.txt");
 
   myFont = ["Noto Sans", "Noto Serif", "Noto Sans Mono"];
-  myFont2 = loadFont('NotoSerif-Italic.ttf')
-  myFont3 = loadFont('NotoSansMono-ExtraBold.ttf')
-//   NotoSerif-Italic.ttf
+  myFont2 = loadFont('NotoSansMono-ExtraBold.ttf')
+  myFont3 = loadFont('NotoSerif-Italic.ttf')
+//   NotoSansMono-ExtraBold.ttf
 }
 
 function setup() {
@@ -294,7 +294,7 @@ function drawPattern(dis) {
       textDis.noStroke();
       textDis.fill(pixelColorImg[i]);
       textDis.textSize(60);
-      textDis.textFont(myFont[i+count]);
+      textDis.textFont(myFont3);
       textDis.textAlign(LEFT, BOTTOM);
       textDis.text(nameDis[i], space, leading);
       space += 85;

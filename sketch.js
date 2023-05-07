@@ -294,7 +294,7 @@ function drawPattern(dis) {
       textDis.noStroke();
       textDis.fill(pixelColorImg[i]);
       textDis.textSize(60);
-      textDis.textFont(myFont);
+      textDis.textFont(myFont[i]);
       textDis.textAlign(LEFT, BOTTOM);
       textDis.text(nameDis[i], space, leading);
       space += 85;

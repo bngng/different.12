@@ -26,6 +26,7 @@ let moveX = 0;
 let direction;
 
 let myFont = [];
+let myFont2
 
 let tilesXbg = 5;
 let tilesYbg = 8;
@@ -65,6 +66,7 @@ function preload() {
   txt = loadStrings("ssbd.txt");
 
   myFont = ["Noto Sans", "Noto Serif", "Noto Sans Mono"];
+  myFont2 = loadFont('NotoSansMono-ExtraBold.ttf')
 }
 
 function setup() {
@@ -153,7 +155,7 @@ function draw() {
   fill(225);
   textSize(18);
   textAlign(CENTER);
-  textFont("Noto Sans Mono");
+  textFont(myFont2);
   text("< refresh >", 0, 0);
   pop();
 
@@ -162,7 +164,7 @@ function draw() {
   fill(225);
   textSize(18);
   textAlign(LEFT);
-  textFont("Noto Sans Mono");
+  textFont(myFont2);
   text("< back >", 0, 0);
   pop();
 
@@ -171,7 +173,7 @@ function draw() {
   fill(225);
   textSize(18);
   textAlign(RIGHT);
-  textFont("Noto Sans Mono");
+  textFont(myFont2);
   text("< next >", 0, 0);
   pop();
   
@@ -180,7 +182,7 @@ function draw() {
   fill(225, 65);
   textSize(18);
   textAlign(CENTER);
-  textFont("Noto Sans Mono");
+  textFont(myFont2);
   text('< click anywhere to play / pause >', 0,0)
   pop();
 }

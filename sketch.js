@@ -311,7 +311,7 @@ function drawPattern(dis) {
   tileWtext = int(textDis.width / tilesXtext);
   tileHtext = int(textDis.height / tilesYtext);
 
-  let distortion = map(mouseX, 0, textDis.width, 0.05, 0.3);
+  let distortion = map(mouseX, 0, textDis.width, 0.05, 0.2);
 
   for (let y = 0; y < tilesYtext; y++) {
     for (let x = 0; x < tilesXtext; x++) {

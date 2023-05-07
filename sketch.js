@@ -84,7 +84,7 @@ function setup() {
   shape.rect(0, 0, 500, 300, 20);
 
   for (let i = 0; i < 1800; i++) {
-    myFont[i] = random(myFont2, myFont3);
+    myFont[i] = random(myFont2);
     colorSet[i] = random(80, 200);
     luck[i] = round(random(-1, 1));
     luck2[i] = round(random(-1, 1));
